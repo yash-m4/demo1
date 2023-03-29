@@ -1,0 +1,45 @@
+package cc;
+
+public class Fan {
+ 
+	 String brand;
+	 int blades;
+	
+public Fan()
+{
+	
+}
+	public Fan(int blades, String brand)
+	{
+		
+		
+		this.brand=brand;
+		
+	}
+	
+	public Fan(int blades)
+	{
+		this(5,"bajaj");
+		this.blades=blades;
+	}
+	
+	
+}
+
+
+
+class FanApp
+{
+	public static void main(String [] args)
+	{
+		Fan f=new Fan(3);
+		Fan ff=new Fan();
+		System.out.println(f.blades);
+		System.out.println(f.brand);
+		
+		System.out.println(ff.brand);
+		
+		
+		
+	}
+}

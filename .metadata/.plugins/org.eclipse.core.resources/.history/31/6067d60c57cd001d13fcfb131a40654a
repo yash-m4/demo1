@@ -1,0 +1,43 @@
+package treeset;
+import java.util.ArrayList
+;
+
+class Employe
+{
+	int id;
+	String name;
+	
+	public Employe(int id,String name)
+	{
+		this.id=id;
+		this.name=name;
+	}
+	public String toString()
+	{
+		return id+"  "+name;
+	}
+}
+
+
+
+
+
+public class Employee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Employe e1=new Employe(10,"ramu");
+Employe e2=new Employe(11,"raju");
+Employe e3	=new Employe(12,"ramesh");
+Employe e4=new Employe(13,"rajesh");
+
+ArrayList<Employe> ts=new ArrayList<Employe>();
+
+ts.add(e1);
+ts.add(e2);
+ts.add(e3);
+ts.add(e4);
+System.out.println(ts);
+	}
+
+}

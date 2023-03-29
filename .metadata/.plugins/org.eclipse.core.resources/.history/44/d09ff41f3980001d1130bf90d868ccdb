@@ -1,0 +1,29 @@
+package Pattern20;
+import java.util.*;
+public class Pattrn2 {
+
+	public static void main(String[] args) {
+		String a;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter Character to Pattern");
+		a=scan.next();
+		for(int x=0; x<=5; x++)
+		{
+			for (int y=5; y<=x; y--)
+			{
+				System.out.print(" ");
+			}
+			
+			for (int z=x; z<=5; z++)
+			{
+				System.out.print(""+a);
+			}
+			
+			
+			
+			
+		}
+
+	}
+
+}

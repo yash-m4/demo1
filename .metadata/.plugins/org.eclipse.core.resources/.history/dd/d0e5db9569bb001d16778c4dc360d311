@@ -1,0 +1,70 @@
+package en;
+import java.util.*;
+public class Encapsule {
+
+	private int age;
+	private String name;
+	
+	void setAge(int x)
+	{
+		if(x>0)
+		{
+			age=x;
+		}
+		else
+		{
+			System.out.println("invalid age");
+			
+		}
+		
+	}
+	
+	void setName(String s)
+	{
+		if(s.equals("o  m"))
+		{
+			name=s;
+		}
+		else
+		{
+			System.out.println("invalid name");
+		}
+	}
+	
+	
+	public int getAge()
+	{
+		return age;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	
+}
+
+
+class Ec
+{
+	public static void main(String [] args)
+	{
+		Scanner scan= new Scanner(System.in);
+		Encapsule ec=new Encapsule();
+		System.out.println("enter age");
+		int a=scan.nextInt();
+		System.out.println("enter name");
+		String b=scan.nextLine();
+		scan.close();
+		
+		ec.setAge(a);
+		ec.setName(b);
+		System.out.println(ec.getAge());
+		System.out.println(ec.getName());
+		
+		
+		
+		
+	}
+}

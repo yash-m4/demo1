@@ -1,0 +1,61 @@
+package bathroom;
+
+class Bathroom implements Runnable
+{
+	public void run()
+	{
+		try
+		{
+			System.out.println(Thread.currentThread().getName() + "  is entring the bathroom");
+			System.out.println(Thread.currentThread().getName() + "  is using the bathroom");
+			System.out.println(Thread.currentThread().getName() + "  is leaving the bathroom");
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
+
+
+
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		try
+		{
+		Bathroom b1=new Bathroom();
+		Bathroom b2=new Bathroom();
+		Bathroom b3=new Bathroom();
+		
+		Thread t1=new Thread(b1);
+		Thread t2=new Thread(b2);
+		Thread t3=new Thread(b3);
+		
+		t1.setName("boy");
+		t2.setName("girl");
+		t3.setName("other");
+		
+		t1.start();
+		t1.join();
+		t2.start();
+		t2.join();
+		t3.start();
+		t3.join();
+		
+		
+		
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+
+}
